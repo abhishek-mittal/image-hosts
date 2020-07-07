@@ -2,13 +2,20 @@
 <head>
     <title>Wow Wednesday Emailer</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
 
-    <style>
+    <style type="text/css" >
+
+        :root {
+            Color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
 
         body {
             margin: 0;
             padding: 0;
-            background-color: #f6f9fc;
+            background-color: #fffff9 !important;
         }
 
         table {
@@ -32,13 +39,11 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: #f6f9fc;
             padding-bottom: 40px;
         }
 
         .webkit {
             max-width: 800px;
-            background-color: #fff;
         }
 
         .outer {
@@ -65,7 +70,7 @@
             line-height: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: white, #8ace61;
+            background-color: #8ace61;
         }
 
         .four-columns .column {
@@ -76,8 +81,11 @@
             vertical-align: top;
         }
 
+        .white-bg {
+            background-color: #fffff9;
+        }
+
         .two-columns .column {
-            width: 60%;
             display: inline-block;
             padding-bottom: 10px;
             border: 2px solid #8ace61;
@@ -96,18 +104,15 @@
         .four-columns .content {
             font-size: 15px;
             line-height: 20px;
-            background-color: white;
         }
 
         .two-columns .content {
             font-size: 15px;
             line-height: 20px;
-            background-color: white;
         }
 
         a{
             text-decoration: none;
-            color: aqua;
             font-size: 16px;
         }
 
@@ -115,23 +120,120 @@
             font-family: Bebas Neue, 'Times New Roman', Times, serif;
             font-size: 80px;            
             color: #486640;
-            
             padding-bottom: 60px;
         }
 
-        @media screen and (max-width: 800px) {
+        .call-to-action {
+            display: block;
             
+            padding: 10px;
+            max-width: 70%;
+            margin: auto;
+            background: #fffff9;
+            box-shadow: 3px 3px #467c1e;
+            color: #486640;
+            font-weight: bold;
         }
 
-        @media screen and (max-width: 400px) {
-            
+        .hor-padding {
+            padding-bottom: 15px;
+        }
+
+        @media (max-width: 800px) {
+            .body {
+                background-color: #fffff9 !important;
+            }
+            .webkit {
+                
+                background-color: #fffff9 !important;
+            }
+            .outer {
+                
+                background-color: #fffff9 !important;
+            }
+            .fourth-image {
+                width: 170px !important;
+                max-width: 170px !important;
+            }
+            .padding {
+                /* padding-left: 0 !important;
+                padding-right: 0 !important; */
+            }
+
+            .banner-img {
+                max-width: 500px !important;
+                width: 500px !important;
+            }
+
+            .new-launch-images {
+                max-width: 200px !important;
+                width: 200px !important;
+            }
+
+            .heading-p {
+                font-size: 40px;
+            }
+
+            .heading-hr {
+                width: 60% !important;
+            }
+
+
+        }
+
+        @media (max-width: 400px) {
+            .body {
+                background-color: #fffff9 !important;
+            }
+            .webkit {
+                
+                background-color: #fffff9 !important;
+            }
+            .outer {
+                
+                background-color: #fffff9 !important;
+            }
+
+            .fourth-image {
+                width: 170px !important;
+                max-width: 170px !important;
+            }
+
+            .banner-img {
+                max-width: 300px !important;
+                width: 300px !important;
+            }
+            .new-launch-images {
+                max-width: 150px !important;
+                width: 150px !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .body {
+                background-color: #fffff9 !important;
+            }
+
+            .webkit {
+                
+                background-color: #fffff9 !important;
+            }
+            .outer {
+                
+                background-color: #fffff9 !important;
+            }
+
+            h1, h2, h3, h4 {
+                color: #9ea1f9 !important;
+                padding: 0px 0px 0px 0px !important;
+            }
         }
 
 
     </style>
 
 </head>
-<body bgcolor="#FFFF00" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 
     <center class="wrapper">
         <div class="webkit">
@@ -142,9 +244,9 @@
                     <td>
                         <table width="100%" style="border-spacing: 0;">
                             <tr>
-                                <td style="background-color: #ffffff;padding:10px;text-align:center;">
+                                <td style="padding:10px;text-align:center;">
                                     <a href="">
-                                        <img width="300px" src="Mamaearth-LOGO.png" alt="">
+                                        <img width="300px" src="https://github.com/abhishek-mittal/image-hosts/blob/master/Mamaearth-LOGO.png?raw=true" alt="">
                                     </a>
                                 </td>
                             </tr>
@@ -153,11 +255,12 @@
                 </tr>
 
                 <tr>
-                    <td style="border-bottom: 3px solid #8ace61;padding-bottom: 4px;">
+                    <td style="padding-bottom: 4px;">
                         <a href="">
-                            <img width="100%" src="WowWednesdayhero.png" style="max-width: 100%;" alt="">
+                            <img width="100%" src="https://github.com/abhishek-mittal/image-hosts/blob/master/WowWednesdayhero.png?raw=true" style="max-width: 100%;" alt="">
+                            <img width="100%" src="natural-goodness-text.png" style="max-width: 100%;" alt="">
                         </a>
-                        <p style="background-color: #8ace61; text-align: center;color: white;font-weight: bold;font-size: 22px;" class="padding" >EXPLORE NATURAL GOODNESS</p>
+                        <!-- <p style="background-color: #8ace61; text-align: center;color: ffffff;font-weight: bold;font-size: 22px;" class="padding" >EXPLORE NATURAL GOODNESS</p> -->
                     </td>
                 </tr>
 
@@ -166,18 +269,18 @@
                         <table style="padding-bottom: 50px;padding-top: 50px;width: 100%;text-align: center;">
                             <tr>
                                 <td>
-                                    <a href="https://mamaearth.in/product-category/hair" target="_blank">
-                                        <img src="Hair-Care.jpg" width="700" height="487" border="0" alt="Shop Now"></a></td>
+                                    <a href="" target="_blank">
+                                        <img class="banner-img" src="https://github.com/abhishek-mittal/image-hosts/blob/master/Hair-Care.jpg?raw=true" width="700" alt="Shop Now"></a></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="https://mamaearth.in/product-category/skin" target="_blank">
-                                        <img src="Skin-Care.jpg" width="700" height="429" border="0" alt="Shop Now - Skin"></a></td>
+                                    <a href="" target="_blank">
+                                        <img class="banner-img" src="https://github.com/abhishek-mittal/image-hosts/blob/master/Skin-Care.jpg?raw=true" width="700"  alt="Shop Now - Skin"></a></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="https://mamaearth.in/product-category/baby" target="_blank">
-                                        <img src="Baby-Care.jpg" width="700" height="456" border="0" alt="Shop Now - Baby"></a></td>
+                                    <a href="" target="_blank">
+                                        <img class="banner-img" src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/Baby-Care.jpg" width="700" alt="Shop Now - Baby"></a></td>
                             </tr>
                         </table>
                     </td>
@@ -190,8 +293,9 @@
                             
                             <tr>
                                 <td class="padding heading">
-                                    <p style="padding: 0;margin: 0;line-height: 0;">BESTSELLER</p>
-                                    <hr width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/>
+                                    <!-- <p class="heading-p" style="padding: 0;margin: 0;line-height: 0;">BESTSELLER</p>
+                                    <hr class="heading-hr" width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/> -->
+                                    <img width="50%" src="bestseller.png" style="max-width: 100%;" alt="">
                                 </td>
                             </tr>
 
@@ -200,21 +304,21 @@
 
                                 <td class="four-columns">
                                     <!-- column 1 -->
-                                    <table class="column">
+                                    <table class="column padding">
                                         <tr>
-                                            <td class="padding">
+                                            <td class="white-bg">
 
                                                 <table class="content">
                                                     <tr>
                                                         <a href="#">
-                                                            <img src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
                                                         </a>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 10px;text-align: center;">
                                                             <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                            <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                            <a>Learn ore</a>
+                                                            <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                            <a class="call-to-action">Learn More</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -223,21 +327,21 @@
                                         </tr>
                                     </table>
                                     <!-- column 2 -->
-                                    <table class="column">
+                                    <table class="column padding">
                                         <tr>
-                                            <td class="padding">
+                                            <td class="white-bg">
 
                                                 <table class="content">
                                                     <tr>
                                                         <a href="#">
-                                                            <img src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
                                                         </a>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 10px;text-align: center;">
                                                             <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                            <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                            <a>Learn ore</a>
+                                                            <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                            <a class="call-to-action">Learn More</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -246,21 +350,21 @@
                                         </tr>
                                     </table>
                                     <!-- column 3 -->
-                                    <table class="column">
+                                    <table class="column padding">
                                         <tr>
-                                            <td class="padding">
+                                            <td class="white-bg">
 
                                                 <table class="content">
                                                     <tr>
                                                         <a href="#">
-                                                            <img src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
                                                         </a>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 10px;text-align: center;">
                                                             <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                            <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                            <a>Learn ore</a>
+                                                            <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                            <a class="call-to-action">Learn More</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -269,21 +373,21 @@
                                         </tr>
                                     </table>
                                     <!-- column 4 -->
-                                    <table class="column">
+                                    <table class="column padding">
                                         <tr>
-                                            <td class="padding">
+                                            <td class="white-bg">
 
                                                 <table class="content">
                                                     <tr>
                                                         <a href="#">
-                                                            <img src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="166" style="max-width: 166px;">
                                                         </a>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 10px;text-align: center;">
                                                             <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                            <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                            <a>Learn ore</a>
+                                                            <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                            <a class="call-to-action">Learn More</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -307,8 +411,9 @@
 
                                 <tr>
                                     <td class="padding heading">
-                                        <p style="padding: 0;margin: 0;line-height: 0;">NEW LAUNCH</p>
-                                        <hr width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/>
+                                        <!-- <p class="heading-p" style="padding: 0;margin: 0;line-height: 0;">NEW LAUNCH</p>
+                                        <hr class="heading-hr" width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/> -->
+                                        <img width="50%" src="new-launch-text.png" style="max-width: 100%;" alt="">
                                     </td>
                                 </tr>
                                 <table>
@@ -317,21 +422,21 @@
                                     <tr>
                                         <td class="two-columns">
                                         <!-- column 1 -->
-                                            <table class="column">
+                                            <table class="column padding">
                                                 <tr>
-                                                    <td class="padding">
+                                                    <td class="white-bg">
         
                                                         <table class="content">
                                                             <tr>
                                                                 <a href="#">
-                                                                    <img src="https://mamaearth.imgix.net/b/h/bhringamla-hair-oil_1.jpg" alt="" width="200" style="max-width: 200px;">
+                                                                    <img class="new-launch-images" src="https://mamaearth.imgix.net/b/h/bhringamla-hair-oil_1.jpg" alt="" width="200" style="max-width: 200px;">
                                                                 </a>
                                                             </tr>
                                                             <tr>
                                                                 <td style="padding: 10px;text-align: center;">
                                                                     <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                                    <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                                    <a>Learn ore</a>
+                                                                    <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                                    <a class="call-to-action">Learn More</a>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -342,21 +447,21 @@
                                         </td>
                                         <!-- column 2 -->
                                         <td class="two-columns">
-                                            <table class="column">
+                                            <table class="column padding">
                                                 <tr>
-                                                    <td class="padding">
+                                                    <td class="white-bg">
         
                                                         <table class="content">
                                                             <tr>
                                                                 <a href="#">
-                                                                    <img src="https://mamaearth.imgix.net/b/h/bhringamla-hair-oil_1.jpg" alt="" width="200" style="max-width: 200px;">
+                                                                    <img class="new-launch-images" src="https://mamaearth.imgix.net/b/h/bhringamla-hair-oil_1.jpg" alt="" width="200" style="max-width: 200px;">
                                                                 </a>
                                                             </tr>
                                                             <tr>
                                                                 <td style="padding: 10px;text-align: center;">
                                                                     <p style="font-size: 17px;font-weight: bold;">kcnekcnlkd</p>
-                                                                    <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
-                                                                    <a>Learn ore</a>
+                                                                    <p class="hor-padding">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                                    <a class="call-to-action">Learn More</a>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -381,16 +486,16 @@
                     <td>
                         <table width="100%" style="border-spacing: 0;">
                             <tr>
-                                <td style="background-color: #388cda;padding: 15px;text-align: center;">
+                                <td style="padding:15px; padding-top: 60px;text-align: center;">
                                     
-                                    <a href="#"><img src="facebook.png" width="30" alt=""></a>
-                                    <a href="#"><img src="Linkedin.png" width="30" alt=""></a>
-                                    <a href="#"><img src="youtube.png" width="30" alt=""></a>
-                                    <a href="#"><img src="instagram.png" width="30" alt=""></a>
+                                    <a href="#"><img src="https://github.com/abhishek-mittal/image-hosts/blob/master/facebook.png?raw=true" width="30" alt=""></a>
+                                    <a href="#"><img src="https://github.com/abhishek-mittal/image-hosts/blob/master/Linkedin.png?raw=true" width="30" alt=""></a>
+                                    <a href="#"><img src="https://github.com/abhishek-mittal/image-hosts/blob/master/youtube.png?raw=true" width="30" alt=""></a>
+                                    <a href="#"><img src="https://github.com/abhishek-mittal/image-hosts/blob/master/instagram.png?raw=true" width="30" alt=""></a>
 
-                                    <p style="font-size: 18px;color: #ffffff;margin-bottom: 13px;">Call: +91 8750476476</p>
-                                    <p style="font-size: 18px;color: #ffffff;margin-bottom: 13px;">Email: care@mamaearth.in</p>
-                                    <p style="font-size: 18px;color: #ffffff;margin-bottom: 13px;">Visit us at: wwww.mamaearth.in</p>
+                                    <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Call: +91 8750476476</p>
+                                    <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Email: care@mamaearth.in</p>
+                                    <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Visit us at: wwww.mamaearth.in</p>
 
                                 </td>
                             </tr>
