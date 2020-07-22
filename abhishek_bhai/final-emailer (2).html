@@ -1,0 +1,656 @@
+<html>
+<head>
+    <title>Wow Wednesday Emailer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+
+    <style type="text/css" >
+
+        :root {
+            Color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+         /* CLIENT-SPECIFIC STYLES ------------------- */
+
+ #outlook a {
+   padding: 0; /* Force Outlook to provide a "view in browser" message */
+ }
+
+ .ReadMsgBody {
+   width: 100%; /* Force Hotmail to display emails at full width */
+ }
+
+ .ExternalClass {
+   width:100%; /* Force Hotmail to display emails at full width */
+ }
+
+ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+   line-height: 100%; /* Force Hotmail to display normal line spacing */
+ }
+
+ body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+ }
+
+ table, td { /* Remove spacing between tables in Outlook 2007 and up */
+   mso-table-lspace: 0pt;
+   mso-table-rspace:0pt;
+ }
+
+ img { /* Allow smoother rendering of resized image in Internet Explorer */
+   -ms-interpolation-mode: bicubic;
+ }
+
+ /* RESET STYLES --------------------------- */
+
+ body {
+   height: 100% !important;
+   margin: 0;
+   padding: 0;
+   width: 100% !important;
+ }
+
+ img {
+   border: 0;
+   height: auto;
+   line-height: 100%;
+   outline: none;
+   text-decoration: none;
+ }
+
+ table {
+   border-collapse: collapse !important;
+ }
+
+ /* iOS BLUE LINKS */
+
+ .apple-links a {
+   color: #999999;
+   text-decoration: none;
+ }
+
+ /* MOBILE STYLES ------------------------ */
+
+ @media screen and (max-width: 600px) {
+
+   td[class="logo"] img {
+     margin: 0 auto !important;
+   }
+
+   td[class="mobile-font"]{
+     font-size: 18px !important;
+     line-height: 22px ;
+   }
+   td[class="otptext"]{
+     display: none !important;
+     opacity: 0 !important;
+     font-size: 1 !important;
+   }
+
+   img[class="fluid-image"]{
+     width: 100% !important;
+     height: auto !important;
+   }
+ }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff !important;
+        }
+
+        table {
+            border: 0;
+        }
+
+        tr {
+            border: 0;
+        }
+
+        td {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            padding-bottom: 40px;
+        }
+
+        .webkit {
+            max-width: 600px;
+        }
+
+        .outer {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #4a4a4a;
+        }
+
+        .four-columns {
+            text-align: center;
+            font-size: 0;
+            line-height: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #8ace61;
+        }
+
+        .two-columns {
+            text-align: center;
+            font-size: 0;
+            line-height: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #8ace61;
+        }
+
+        .four-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            padding-bottom: 10px;
+        }
+
+        .white-bg {
+            background-color: #ffffff;
+            height: 370px;
+            vertical-align: bottom;
+        }
+
+        .two-columns .column {
+            display: inline-block;
+            padding-bottom: 10px;
+            border: 2px solid #8ace61;
+        }
+
+        p {
+            margin: 0;
+            border: 0;
+        }
+
+        .padding {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .four-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .heading {
+            font-family: Bebas Neue, 'Times New Roman', Times, serif;
+            font-size: 80px;            
+            color: #486640;
+            padding-bottom: 40px;
+        }
+
+        .call-to-action {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            max-width: 70%;
+            margin: auto;
+            background: #ffffff;
+            border-bottom: 3px solid #467c1ec9;
+            border-right: 3px solid #467c1ec9;
+            color: #486640;
+            font-weight: bold;
+        }
+
+        .hor-padding {
+            padding-bottom: 15px;
+        }
+
+        /* .last-fourth-image {
+            width: 200px !important;
+            max-width: 170px !important;
+        } */
+
+        /* .last-column {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            max-width: 170px !important;
+        } */
+
+        @media (max-width: 800px) {
+            .body {
+                background-color: #ffffff !important;
+            }
+            .webkit {
+                
+                background-color: #ffffff !important;
+            }
+            .outer {
+                
+                background-color: #ffffff !important;
+            }
+            .fourth-image {
+                width: 170px !important;
+                max-width: 170px !important;
+            }
+            .padding {
+                /* padding-left: 0 !important;
+                padding-right: 0 !important; */
+            }
+
+            .banner-img {
+                max-width: 500px !important;
+                width: 500px !important;
+            }
+
+            .new-launch-images {
+                max-width: 200px !important;
+                width: 200px !important;
+            }
+
+            .heading-p {
+                font-size: 40px;
+            }
+
+            .heading-hr {
+                width: 60% !important;
+            }
+
+            .four-columns .column {
+                width: 100% !important;
+                max-width: 300px !important;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            .body {
+                background-color: #ffffff !important;
+            }
+            .webkit {
+                
+                background-color: #ffffff !important;
+            }
+            .outer {
+                
+                background-color: #ffffff !important;
+            }
+
+            .four-columns .column {
+                width: 100% !important;
+                max-width: 180px !important;
+            }
+
+            .padding {
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+            }
+
+            .fourth-image {
+                width: 170px !important;
+                max-width: 170px !important;
+            }
+
+            .banner-img {
+                max-width: 300px !important;
+                width: 300px !important;
+            }
+            .new-launch-images {
+                max-width: 150px !important;
+                width: 150px !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .body {
+                background-color: #ffffff !important;
+            }
+
+            .webkit {
+                
+                background-color: #ffffff !important;
+            }
+            .outer {
+                
+                background-color: #ffffff !important;
+            }
+
+            h1, h2, h3, h4 {
+                color: #9ea1f9 !important;
+                padding: 0px 0px 0px 0px !important;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+    <!-- ?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3 -->
+
+    <center class="wrapper">
+        <div class="webkit">
+
+            <table class="outer" align="center">
+    
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td style="padding:10px;text-align:center;">
+                                    <a target="_blank" href="https://mamaearth.in?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                        <img width="300px" src="https://mamaearthp.imgix.net/wysiwyg/Mamaearth-LOGO.png?auto=format" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-bottom: 4px;">
+                        <a href="https://mamaearth.in/wow-wednesday-offer?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                            <img width="100%" src="https://mamaearthp.imgix.net/wysiwyg/WowWednesday720x480-exclusive_2UVMvcU.jpg?auto=format" style="max-width: 100%;" alt="">
+                            <img width="100%" src="https://mamaearthp.imgix.net/wysiwyg/natural-goodness-text.png?auto=format" style="max-width: 100%;" alt="">
+                        </a>
+                        <!-- <p style="background-color: #8ace61; text-align: center;color: ffffff;font-weight: bold;font-size: 22px;" class="padding" >EXPLORE NATURAL GOODNESS</p> -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table style="padding-bottom: 20px;padding-top: 30px;width: 100%;text-align: center;">
+                            <tr>
+                                <td>
+                                    <a href="https://mamaearth.in/product-category/hair?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" target="_blank">
+                                        <img class="banner-img" src="https://mamaearthp.imgix.net/wysiwyg/Hair-Care.jpg?auto=format" width="600" alt="Shop Now"></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://mamaearth.in/product-category/skin?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" target="_blank">
+                                        <img class="banner-img" src="https://mamaearthp.imgix.net/wysiwyg/Skin-Care.jpg?auto=format" width="600"  alt="Shop Now - Skin"></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://mamaearth.in/product-category/baby?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" target="_blank">
+                                        <img class="banner-img" src="https://mamaearthp.imgix.net/wysiwyg/Baby-Care.jpg?auto=format" width="600" alt="Shop Now - Baby"></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- mamaearth new launch -->
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;text-align: center;">
+                            
+                            <tr>
+                                <td class="padding heading">
+                                    <!-- <p class="heading-p" style="padding: 0;margin: 0;line-height: 0;">BESTSELLER</p>
+                                    <hr class="heading-hr" width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/> -->
+                                    <img width="50%" src="https://mamaearthp.imgix.net/wysiwyg/bestseller.png?auto=format" style="max-width: 100%;" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+
+
+                                <td class="four-columns">
+                                    <!-- column 1 -->
+                                    <table class="column padding">
+                                        <tr>
+                                            <td class="white-bg">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <!-- skin illiminate -->
+                                                        <a target="_blank" href="https://mamaearth.in/product/skin-illuminate-face-serum-for-radiant-skin-with-vitamin-c-turmeric-30-gm?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/s/k/skin-illuminate-face-serum-with-ingridients.jpg" alt="" width="150" style="max-width: 150px;">
+                                                        </a>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <p class="hor-padding" style="font-size: 17px;font-weight: bold;">Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric – 30 gm</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <a target="_blank" href="https://mamaearth.in/product/skin-illuminate-face-serum-for-radiant-skin-with-vitamin-c-turmeric-30-gm?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" class="call-to-action">Shop Now</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- column 2 -->
+                                    <table class="column padding">
+                                        <tr>
+                                            <td class="white-bg">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <!-- onion hair oil -->
+                                                        <a target="_blank" href="https://mamaearth.in/product/onion-hair-oil-for-hair-regrowth-hair-fall-control-with-redensyl-150ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/o/n/onion-hair-oil_1_1.jpg" alt="" width="150" style="max-width: 150px;">
+                                                        </a>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <p class="hor-padding" style="font-size: 17px;font-weight: bold;">Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <a target="_blank" href="https://mamaearth.in/product/onion-hair-oil-for-hair-regrowth-hair-fall-control-with-redensyl-150ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" class="call-to-action">Shop Now</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- column 3 -->
+                                    <table class="column padding">
+                                        <tr>
+                                            <td class="white-bg">
+
+                                                <table class="content">
+                                                    <!-- onion mask -->
+                                                    <tr>
+                                                        <a target="_blank" href="https://mamaearth.in/product/onion-hair-mask-for-hair-fall-control-with-onion-oil-organic-bamboo-vinegar-200ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                                            <img class="fourth-image" src="https://mamaearth.imgix.net/f/d/fds_7953-probs_2.jpg?auto=format&fit=crop&w=600" alt="" width="150" style="max-width: 150px;">
+                                                        </a>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <p class="hor-padding" style="font-size: 17px;font-weight: bold;">Onion Hair Mask, For Hair Fall Control, With Onion Oil and Organic Bamboo Vinegar, 200ml</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <a target="_blank" href="https://mamaearth.in/product/onion-hair-mask-for-hair-fall-control-with-onion-oil-organic-bamboo-vinegar-200ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" class="call-to-action">Shop Now</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <!-- column 4 -->
+                                    <table class="column padding last-column">
+                                        <tr>
+                                            <td class="white-bg">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <a target="_blank" href="https://mamaearth.in/product/bye-bye-blemishes-face-cream-for-pigmentation-blemish-removal-with-mulberry-extract-vitamin-c-30ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                                            <img class="fourth-image last-fourth-image" src="https://mamaearth.imgix.net/_/m/_mg_1969_props.jpg?auto=format&fit=crop&w=1163.6363636363637" alt="" width="150" style="max-width: 150px;">
+                                                        </a>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <p class="hor-padding" style="font-size: 17px;font-weight: bold;">Bye Bye Blemishes Face Cream for Reducing Pigmentation & Blemishes – 30ml</p>   
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;text-align: center;">
+                                                            <a target="_blank" href="https://mamaearth.in/product/bye-bye-blemishes-face-cream-for-pigmentation-blemish-removal-with-mulberry-extract-vitamin-c-30ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" class="call-to-action">Shop Now</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- mamaearth bestseller -->
+
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;padding-top: 30px;">
+                            <td>
+
+                                <tr>
+                                    <td class="padding heading">
+                                        <!-- <p class="heading-p" style="padding: 0;margin: 0;line-height: 0;">NEW LAUNCH</p>
+                                        <hr class="heading-hr" width="40%" style="border: 20px solid #8ace61;margin: 0 auto;"/> -->
+                                        <img width="50%" src="https://mamaearthp.imgix.net/wysiwyg/new-launch-text.png?auto=format" style="max-width: 100%;" alt="">
+                                    </td>
+                                </tr>
+                                <table style="background-color: #8ace61;">
+
+                                    
+                                    <tr>
+                                        <td class="two-columns">
+                                        <!-- column 1 -->
+                                            <table class="column padding">
+                                                <tr>
+                                                    <td class="white-bg">
+        
+                                                        <table class="content">
+                                                            <tr>
+                                                                <!-- bhringmala -->
+                                                                <a target="_blank" href="https://mamaearth.in/product/bhringamla-hair-oil-with-bhringraj-amla-for-intense-hair-treatment-250ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">
+                                                                    <img class="new-launch-images" src="https://mamaearth.imgix.net/b/h/bhringamla-hair-oil_1.jpg?auto=format&fit=crop&w=600" alt="" width="200" style="max-width: 200px;">
+                                                                </a>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 10px;text-align: center;">
+                                                                    <p class="hor-padding" style="font-size: 17px;font-weight: bold;">BhringAmla Hair Oil with Bhringraj & Amla for Intense Hair Treatment – 250ml</p>
+                                                                    <a class="call-to-action" target="_blank" href="https://mamaearth.in/product/bhringamla-hair-oil-with-bhringraj-amla-for-intense-hair-treatment-250ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+        
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <!-- column 2 -->
+                                        <td class="two-columns">
+                                            <table class="column padding">
+                                                <tr>
+                                                    <td class="white-bg">
+        
+                                                        <table class="content">
+                                                            <tr>
+                                                                <!-- vitamin c -->
+                                                                <a target="_blank" href="https://mamaearth.in/product/vitamin-c-face-toner-with-vitamin-c-cucumber-for-pore-tightening-200-ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" target="_blank">
+                                                                    <img class="new-launch-images" src="https://mamaearth.imgix.net/w/i/with-ingredieant.jpg?auto=format&fit=crop&w=1163.6363636363637" alt="" width="200" style="max-width: 200px;">
+                                                                </a>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 10px;text-align: center;">
+                                                                    <p class="hor-padding" style="font-size: 17px;font-weight: bold;">Vitamin C Face Toner with Vitamin C & Cucumber for Pore Tightening, 200 ml</p>
+                                                                    <a class="call-to-action" target="_blank" href="https://mamaearth.in/product/vitamin-c-face-toner-with-vitamin-c-cucumber-for-pore-tightening-200-ml?utm_source=Email&utm_medium=Wow-Wednesday&utm_campaign=7-July-B4P3" target="_blank">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+        
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </td>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- mamaearth bestseller -->
+
+                <!-- footer -->
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td style="padding:15px; padding-top: 30px;text-align: center;">
+                                    <table width="100%" style="border-spacing: 0;">
+                                        <tr>
+                                            <td class="padding">
+                                                <a target="_blank" class="padding" href="https://www.facebook.com/Mamaearthindia/"><img src="https://mamaearthp.imgix.net/wysiwyg/facebook.png?auto=format" width="30" alt=""></a>
+                                                <a target="_blank" class="padding" href="https://www.linkedin.com/company/honasa-consumer-pvt-ltd/"><img src="https://github.com/abhishek-mittal/image-hosts/blob/master/Linkedin.png?raw=true" width="30" alt=""></a>
+                                                <a target="_blank" class="padding" href="https://www.youtube.com/channel/UC5qhqSIcahBKKMEdLPFqeVA"><img src="https://mamaearthp.imgix.net/wysiwyg/youtube.png?auto=format" width="30" alt=""></a>
+                                                <a target="_blank" class="padding" href="https://www.instagram.com/mamaearth.in/?hl=en"><img src="https://mamaearthp.imgix.net/wysiwyg/instagram.png?auto=format" width="30" alt=""></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="padding">
+                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Call: +91 8750476476</p>
+                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Email: care@mamaearth.in</p>
+                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Visit us at: wwww.mamaearth.in</p>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                
+            </table>
+
+        </div>
+    </center>
+
+</body>
+</html>
