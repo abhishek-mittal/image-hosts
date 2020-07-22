@@ -136,8 +136,12 @@
                 font-size: 1 !important;
             }
 
-            img[class="fluid-image"] {
+            img[class="fluid-image-max"] {
                 width: 100% !important;
+                height: auto !important;
+            }
+            img[class="fluid-image"] {
+                max-width: 100% !important;
                 height: auto !important;
             }
         }
@@ -209,43 +213,83 @@
                     Please Put Campaign Here
                 </div>
 
-                <!-- <tr>
-                    <td>
-                        <a href=""><img src="./../assets/LOGO.png" alt="mamaearth logo"></a>
-                    </td>
+                <!-- // header -->
+                    <thead>
+                        
+                        <tr>
 
-                    <td>
-                    <td class="padding t-right">
-                        <p>Get The App :</p>
-                    </td>
-                    <td class="padding">
-                        <a href=""><img src="./../assets/android.png" alt="android logo"></a>
-                    </td>
-                    <td>
-                        <a href=""><img src="./../assets/company-1.png" alt="apple logo"></a>
-                    </td>
-                    </td>
-                </tr>
+                            <style>
+                                .mamaearth-logo-header {
+                                    padding: 5px 60px;
+                                }
 
+                                .get-the-app-section > * {
+                                    display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #989898;
+                                    font-family: Roboto, Medium;
+                                    font-size: 12px;
+                                }
+                            </style>
+                            <td class="mamaearth-logo-header">
+                                <table>
+                                    <tr>
+                                        <td><img class="fluid-image"src="./../assets/Logo.png" alt=""></td>
+                                        <td align="right">
+                                            <div class="get-the-app-section">
+                                                <p>Get The App: </p>
+                                                <img class="fluid-image"src="./../assets/android.png" alt="">
+                                                <img class="fluid-image"src="./../assets/company-1.png" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>        
+                            </td>
+                        </tr>
+
+                    </thead>
+
+                <!-- // main -->
+                
                 <tr>
-                    <td>
-                        <table width="100%">
+                    <style>
+                        .order-confirmation-status-container {
+                            padding: 5px 60px;
+                            background-color: tomato;
+                        }
+                        .order-confirmation-status-container p {
+                            font-size: 12px;
+                        }
+
+                        .pyb-5 {
+                            padding-bottom: 0.5em;
+                        }
+                    </style>
+                    <td class="order-confirmation-status-container">
+                        <table align="center">
                             <tr>
-                                <td><img src="./../assets/correct (1).png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p> Order Placed & Confirmed </p>
+                                <td class="pyb-5" align="center">
+                                    <img class="fluid-image"src="./../assets/correct (1).png" alt="">
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p> Hi Aman, Thank you for your order! </p>
+                                <td class="pyb-5" align="center">
+                                    <h3>Order Placed & Confirmed</h3>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p> You will receive the next update when the item in your order is shipped. </p>
+                                <td class="pyb-5" align="center">
+                                    <p>Hi Aman, Thank you for your order!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pyb-5" align="center">
+                                    <img class="fluid-image"src="./../assets/Group 8648.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pyb-5" align="center">
+                                    <p>You will receive the next update when the item in your order is shipped.</p>
                                 </td>
                             </tr>
                         </table>
@@ -253,251 +297,534 @@
                 </tr>
 
                 <tr>
-                    <td>
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    <p>Order Placed On</p>
-                                </td>
-                                <td>
-                                    <p>Jul 12, 2020, 3:56:50 PM</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Order ID</p>
-                                </td>
-                                <td>
-                                    <p>90001297411</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Expected Order Delivery By</p>
-                                </td>
-                                <td>
-                                    <p>Jul 15, 2020</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                        <p><span>Note : - </span> to government restrictions around COVID-19, you may experience a delay
-                            in your order delivery. We regret the inconvenience and request you to please bear with us
-                            in this extremely challenging situation.</p>
-                    </td>
-                </tr>
+                    <style>
+                        .order-details-breakup {
+                            padding: 5px 60px;
+                        }
 
-                <tr>
-                    <td>
-                        <table width="100%">
+                        .order-details-breakup .order-details-breakup--wrapper {
+                            border-radius: 4px;
+                            overflow: hidden;
+                        }
 
+                        .order-details-breakup .order-details-breakup--wrapper .order-details {
+                            padding: 10px;
+                            border-bottom: 1px solid #cccccc;
+                            background-color: #F8F8F8;
+                            font-size: 14px;
+
+                            display: block;
+                        }
+
+                        .order-details-breakup .order-details-breakup--wrapper .order-details:last-of-type {
+                            border-bottom: none;
+                        }
+
+                        .order-details-breakup .order-details strong {
+                            font-size: 16px;
+                        }
+                    </style>
+
+                    <td class="order-details-breakup">
+                        <table>
                             <tr>
-                                <td>
-                                    <img src="./../assets/skin-illuminate-face-serum-with-ingridients.png" alt="">
-                                </td>
-                                <td>
-                                    <table width="100%">
+                                <td class="order-details-breakup--wrapper">
+                                    <table>
                                         <tr>
-                                            <td>
-                                                <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric
-                                                    - 30</p>
+                                            <td class="order-details">
+                                                <table>
+                                                    <tr>
+                                                        <td><p>Order Placed On</p></td>
+                                                        <td class="t-right"><strong>Jul 12, 2020, 3:56:50 PM</strong></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="order-details">
+                                                <table>
+                                                    <tr>
+                                                        <td><p>Order ID</p></td>
+                                                        <td class="t-right"><strong>90001297411</strong></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="order-details">
+                                                <table>
+                                                    <tr>
+                                                        <td><p>Expected Order Delivery By</p></td>
+                                                        <td class="t-right"><strong>Jul 15, 2020</strong></td>
+                                                    </tr>
+                                                </table>
                                             </td>
                                         </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> <!-- end of order-details-breakup/main -->
+
+                <tr>
+                    <style>
+                        .note-info-container {
+                            text-align: justify;
+                            padding: 0px 60px;
+                        }
+                        .note-info-container p {
+                            padding: 15px;
+                            background-color: #EAFFC7;
+                            border-radius: 10px;
+                            font-size: 12px;
+                            color: #6DA523;
+                        }
+                        .note-info-container p .title {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    </style>
+                    <td class="note-info-container">
+                        <p>
+                            <span class="title">
+                                Note : -
+                            </span>
+                            Due to government restrictions around COVID-19, you may experience a delay in your order delivery. We regret the inconvenience and request you to please bear with us in this extremely challenging situation.
+                        </p>
+                    </td>
+                </tr> <!-- end of note-info-container/main -->
+
+                <tr>
+
+                    <style>
+                        .product-card-list {
+                            padding: 5px 60px;
+                        }
+
+                        .product-card-list .product-card-list--card {
+                            display: inline-block;
+                            vertical-align: top;
+                            margin: 5px 0;
+                            border-radius: 4px;
+                            border: 1px solid #DBDBDB;
+                            background-color: #ffffff;
+                        }
+
+                        .product-card-list .product-card-list--card .column {
+                            /* display: ; */
+                        }
+
+
+
+                        .product-card-list .product-card-list--card .product-card-list--card--image {
+                            max-width: 120px;
+                            max-height: 120px;
+                        }
+                        .product-card-list .product-card-list--card .product-card-list--card--details {
+                            padding: 0 12px;
+                        }
+                        .product-card-list .product-card-list--card .product-card-list--card--details .product-name {
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 10px 0;
+                        }
+                        .product-card-list .product-card-list--card .product-card-list--card--details .product-bold-dets {
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: #1D1D1D;
+                            padding: 10px 0;
+                        }
+                        .product-card-list .product-card-list--card .product-card-list--card--details .light-title {
+                            font-size: 16px;
+                            color: #989898;
+                        }
+
+                        .t-right {
+                            text-align: right;
+                        }
+
+                        @media screen and (max-width:600px) {
+
+                            .product-card-list > table {
+                                text-align: center;
+                            }
+
+                            .product-card-list .product-card-list--card {
+                                max-width: 44%;
+                                margin: 5px 6px;
+                            }
+
+                            .product-card-list .product-card-list--card .product-card-list--card--image {
+                                width: 100%;
+                                display: inline-block;
+                                vertical-align: top;
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+
+                            .product-card-list .product-card-list--card .product-card-list--card--details {
+                                display: inline-block;
+                                vertical-align: top;
+                            }
+                            .product-card-list .product-card-list--card .product-card-list--card--image img {
+                                width: 100%;
+                            }
+
+                            .product-card-list .product-card-list--card .product-card-list--card--details .product-name { 
+                                text-align: center;
+                            }
+
+                            .product-card-list .product-card-list--card .product-card-list--card--details .light-title {
+                                height: 40px;
+                            }
+                        }
+                    </style>
+
+                    <td class="product-card-list">
+                        <table>
+                            <tr>
+                                <td class="product-card-list--card">
+                                    <table>
                                         <tr>
-                                            <td>
-                                                <p> <span> Item Price: </span> 499.00 </p>
+                                            <td class="column product-card-list--card--image"><img class="fluid-image"src="./../assets/Group 8727.png" alt=""></td>
+                                            <td class="column product-card-list--card--details">
+                                                <table>
+                                                    <tr>
+                                                        <td class="product-name" colspan="2"><p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric - 30</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="product-bold-dets" ><p class=""> <span class="light-title"> Item Price: </span> 499.00 </p></td>
+                                                        <td class="product-bold-dets" ><p class="t-right"> <span class="light-title"> Qty: </span> 1 </p></td>
+                                                    </tr>
+                                                </table>
                                             </td>
-                                            <td>
-                                                <p> <span> Qty: </span> 1 </p>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="product-card-list--card">
+                                    <table>
+                                        <tr>
+                                            <td class="column product-card-list--card--image"><img class="fluid-image"src="./../assets/Group 8727.png" alt=""></td>
+                                            <td class="column product-card-list--card--details">
+                                                <table>
+                                                    <tr>
+                                                        <td class="product-name" colspan="2"><p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric - 30</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="product-bold-dets" ><p class=""> <span class="light-title"> Item Price: </span> 499.00 </p></td>
+                                                        <td class="product-bold-dets" ><p class="t-right"> <span class="light-title"> Qty: </span> 1 </p></td>
+                                                    </tr>
+                                                </table>
                                             </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> <!-- end of product-card-list/main -->
+
+                <tr>
+
+                    <style>
+                        .payment-information {
+                            padding: 15px 60px;
+                            background-color: #dbffbf;
+                        }
+                        .payment-information .heading {
+                            border-bottom: 1px solid #cccccc;
+                            padding-bottom: 10px;
+                        }
+
+                        .payment-information .payment-information--breakup {}
+                        .payment-information .payment-information--breakup {
+
+                            font-family: Roboto;
+                            
+                        }
+                        .payment-information .payment-information--breakup .payment-information--breakup--title {
+                            text-align: left;
+                            font-size: 12px;
+                        }
+                        .payment-information .payment-information--breakup .payment-information--breakup--value {
+                            text-align: right;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        .payment-information .payment-information--breakup .payment-information--breakup--value.discount {
+                            color: #FF0000;
+                        }
+
+                        .payment-information .payment-information--breakup .payment-information--breakup--value.total {
+                            font-size: 19px;
+                        }
+                        .payment-information .footing {
+                            text-align: center;
+                            font-size: 12px;
+                            border-top: 1px solid;
+                            border-bottom: 1px solid;
+                            padding: 6px 0;
+                        }
+
+                        .payment-information .footing a {
+                            color: #00AFEF;
+                            text-decoration: none;
+                            font-weight: 600;
+                        }
+
+                        .py-5 {
+                            padding: 0.5em 0;
+                        }
+                        
+ 
+                    </style>
+
+                    <td class="payment-information">
+                        <table>
+
+                            <tr>
+                                <td class="heading">
+                                    <h3>Payment Information</h3>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="payment-information--breakup">
+                                    <table>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Order Total</p></td>
+                                            <td class="py-5 payment-information--breakup--value"><p> &#8377; 1497.00</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Items Discount</p></td>
+                                            <td class="py-5 payment-information--breakup--value discount"><p> - &#8377; 22.72</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Subtotal</p></td>
+                                            <td class="py-5 payment-information--breakup--value"><p> &#8377; 1475.00</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Coupon Discounts <strong>(MAMA20)</strong></p></td>
+                                            <td class="py-5 payment-information--breakup--value discount"><p> - &#8377; 205.00</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Shipping Charges</p></td>
+                                            <td class="py-5 payment-information--breakup--value"><p> &#8377; 00.00</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Subtotal</p></td>
+                                            <td class="py-5 payment-information--breakup--value discount"><p> - &#8377; 390.42</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>COD</p></td>
+                                            <td class="py-5 payment-information--breakup--value"><p> &#8377; 40.00</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information--breakup--title"><p>Amount Paid</p></td>
+                                            <td class="py-5 payment-information--breakup--value total"><p> &#8377; 45.92</p></td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>
-                                    <img src="./../assets/skin-repair-body-lotion_pack-of-2_1200x1200_1.png" alt="">
+                                <td class="footing">
+                                    <p>If you think this was a mistake please contact here, <a href="www.mamaearth.in/contactus">www.mamaearth.in/contactus</a> .</p>
                                 </td>
-                                <td>
-                                    <table width="100%">
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr> <!-- end of payment-information/main -->
+
+                <tr>
+
+                    <style>
+                        .delivery-address {
+                            padding: 15px 60px;
+                        }
+
+
+                        .delivery-address .address-heading {
+                            padding: 8px 0;
+                        }
+
+                        .delivery-address .shaded-address {
+                            padding: 10px;
+                            background: #F8F8F8;
+                            border-radius: 4px;
+                        }
+
+                        .delivery-address .shaded-address .shaded-address--name {
+                            color: #000;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                        }
+
+                        .delivery-address .shaded-address .office-button {
+                            border: 1px solid #989898;
+                            border-radius: 5px;
+                            background: #EAEAEA;
+                            padding: 1px 4px;
+                            cursor: pointer;
+                        }
+
+                        .delivery-address .shaded-address .shaded-address--address {
+                            max-width: 273px;
+                            font-size: 14px;
+                            font-family: Regular, Roboto;
+                        }
+                    </style>
+
+                    <td class="delivery-address">
+                        <table>
+                            <tr>
+                                <td class="address-heading">
+                                    <h3>Delivery Address</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="shaded-address">
+                                    <table>
                                         <tr>
                                             <td>
-                                                <p>Skin Illuminate Face Serum for Radiant Skin with Vitamin C & Turmeric
-                                                    - 30</p>
+                                                <p class="shaded-address--name">Aman Tiwari</p>
+                                            </td>
+                                            <td style="text-align: right;"><span class="office-button">Office</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p> <span> Item Price: </span> 499.00 </p>
-                                            </td>
-                                            <td>
-                                                <p> <span> Qty: </span> 1 </p>
+                                                <p class="shaded-address--address">BLM Tower, 4th Floor, Sector 44,
+                                                    Gurugram, Haryana, India - 122003</p>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
-
                         </table>
                     </td>
-                </tr>
+                </tr> <!-- end of delivery-address/main -->
 
                 <tr>
-                    <td>
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    <p>Payment Information</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Order Total</p>
-                                </td>
-                                <td>
-                                    <p>1497.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Items Discount</p>
-                                </td>
-                                <td>
-                                    <p>- 22.72</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Subtotal</p>
-                                </td>
-                                <td>
-                                    <p>1475.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Coupon Discounts (MAMA20)</p>
-                                </td>
-                                <td>
-                                    <p>- 205.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Amount Paid</p>
-                                </td>
-                                <td>
-                                    <p>45.92</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                    <style>
+                        .updates-on {
+                            background-color: brown;
+                            border-bottom: 1px solid;
+                            padding: 0 60px 15px 60px;
+                        }
 
-                <tr>
-                    <td>
-                        <p>If you think this was a mistake please contact here, www.mamaearth.in/contactus.</p>
-                    </td>
-                </tr>
+                        .updates-on table td.column {
+                            text-align: center;
+                            color: #000000;
+                        }
 
-                <tr>
-                    <td>
-                        <table width="100%">
+                        .updates-on table td .heading {
+                            font-weight: 600;
+                        }
+
+                        .updates-on .update-details table {
+                            text-align: right;
+                        }
+
+                        .updates-on table td p {
+                            padding-top: 8px;
+                        }
+
+                        .updates-on table td img {
+                            padding: 0 10px;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            .updates-on table {
+                                text-align: center;
+                            }
+                            .updates-on table td.column {
+                                display: inline-block;
+                                text-align: center;
+                            }
+                            .updates-on table td.column * {
+                                text-align: center;
+                            }
+                            .updates-on table td img {
+                                padding-bottom: 5px;
+                            }
+                        }
+                    </style>
+                    <td class="updates-on">
+                        <table>
                             <tr>
-                                <td>
-                                    <p>Delivery Address</p>
+
+                                <td class="column">
+                                    <p class="heading">Updates On</p>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table width="100%">
+
+                                <td class="update-details column">
+                                    <table>
                                         <tr>
                                             <td>
-                                                <p>Aman Tiwari</p>
+                                                <p> <img class="fluid-image"src="./../assets/Icon feather-mail.png" alt="">
+                                                    aman.t@mamaearth.in</p>
                                             </td>
                                             <td>
-                                                <div>Office</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>
-                                                    BLM Tower, 4th Floor, Sector 44, Gurugram, Haryana, India - 122003
+                                                <p> <img class="fluid-image"src="./../assets/Icon simple-whatsapp.png" alt=""> 9999564525
                                                 </p>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
+
+
                             </tr>
                         </table>
                     </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <p>Updates On</p>
-                    </td>
-                    <td>
-                        <p>aman.t@mamaearth.in</p>
-                    </td>
-                    <td>
-                        <p>9999564525</p>
-                    </td>
-                </tr> -->
+                </tr> <!-- end of updates-on/main -->
 
                 <!-- // footer -->
 
-                <style>
-                    * {
-                        padding: 0;
-                        margin: 0;
-                    }
-
-                    .footer {
-                        border: 2px solid;
-                    }
-
-                    .max-4-columns {
-                        text-align: center;
-                    }
-
-                    .max-4-columns .column {
-                        display: inline-block;
-                        vertical-align: top;
-                        padding: 0 15px;
-                        text-align: center;
-                    }
-
-                    .mood p {
-                        text-align: center;
-                        color: #1D1D1D;
-                        font-weight: 800;
-                        font-family: Arial, Helvetica, sans-serif;
-                        letter-spacing: 0px;
-                        text-transform: uppercase;
-                        font-size: 12px;
-                        padding: 10px 0;
-                    }
-
-                    .mood h3 {
-                        letter-spacing: 0px;
-                        text-transform: uppercase;
-                        text-align: center;
-                        font-size: 18px;
-                        padding: 10px 0;
-                    }
-
-                    .padding {
-                        padding: 15px;
-                    }
-                </style>
-
                 <tr>
+                    <style>
+                        * {
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .footer {
+                            border: 2px solid;
+                        }
+
+                        .max-4-columns {
+                            text-align: center;
+                        }
+
+                        .max-4-columns .column {
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 0 15px;
+                            text-align: center;
+                        }
+
+                        .mood p {
+                            text-align: center;
+                            color: #1D1D1D;
+                            font-weight: 800;
+                            font-family: Arial, Helvetica, sans-serif;
+                            letter-spacing: 0px;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            padding: 10px 0;
+                        }
+
+                        .mood h3 {
+                            letter-spacing: 0px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-size: 18px;
+                            padding: 10px 0;
+                        }
+
+                        .padding {
+                            padding: 15px;
+                        }
+                    </style>
 
                     <td class="mood padding">
                         <table>
@@ -514,7 +841,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9234.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9234.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -530,7 +858,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9235.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9235.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -546,7 +875,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9236.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9236.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -562,7 +892,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9237.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9237.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -578,7 +909,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9240.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9240.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -594,7 +926,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9241.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9241.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -610,7 +943,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9238.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9238.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -626,7 +960,8 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="./../assets/Group 9239.png" alt="">
+                                                    <img class="fluid-image"src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Group 9239.png"
+                                                        alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -641,46 +976,60 @@
                         </table>
                     </td>
 
-                </tr>
-
-                <style>
-                    .category-shop {
-                        background-color: brown;
-                        text-align: center;
-                        padding-top: 10px;
-                    }
-
-                    .category-shop table {
-                        text-align: center;
-                    }
-
-                    .category-shop .column table {
-                        text-align: center;
-                    }
-
-                    .category-shop .column table .category {
-                        padding: 15px;
-                        background-color: white; 
-                    }
-
-                    .category-shop .column table .category table {
-                    }
-
-                    .max-2-columns {
-                        text-align: center;
-                    }
-
-                    .max-2-columns .column {
-                        display: inline-block;
-                        vertical-align: top;
-                        text-align: center;
-                        padding: 5px;
-                        margin: 5px;
-                        border: 1px solid;
-                    }
-                </style>
+                </tr> <!-- end of mood/footer -->
 
                 <tr>
+                    <style>
+                        .category-shop {
+                            background-color: brown;
+                            text-align: center;
+                            padding-top: 10px;
+                        }
+
+                        .category-shop table {
+                            text-align: center;
+                        }
+
+                        .category-shop .column table {
+                            text-align: center;
+                        }
+
+                        .category-shop .column table .category {
+                            padding: 15px;
+                            background-color: white;
+                        }
+
+                        .category-shop .column table .category table {}
+
+                        .category-shop .column .categ-img {
+                            height: 160px;
+                            width: 232px;
+                            max-width: 100%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+
+                        .max-2-columns {
+                            text-align: center;
+                        }
+
+                        .max-2-columns .column {
+                            display: inline-block;
+                            vertical-align: top;
+                            text-align: center;
+                            margin: 4px;
+
+                            border: 1px solid #cccccc;
+                            border-radius: 2px;
+                            overflow: hidden;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            .max-2-columns .column {
+                                max-width: 40%;
+                            }
+                        }
+                    </style>
 
                     <td class="category-shop padding">
                         <table>
@@ -688,12 +1037,11 @@
                                 <td class="column">
                                     <table>
                                         <tr>
-                                            <td><img style="height: 160px;
-                                                width: 232px;
-                                                object-fit: cover;
-                                                object-position: top;" src="./../assets/children-slide-11.png" alt=""></td>
+                                            <td><img class="fluid-image"class="categ-img"
+                                                    src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/children-slide-11.png"
+                                                    alt=""></td>
                                         </tr>
-                                        <tr >
+                                        <tr>
                                             <td class="category">
                                                 <table>
                                                     <tr>
@@ -703,7 +1051,8 @@
                                                     </tr>
                                                     <tr class="shop-now-cta">
                                                         <td>
-                                                            <span class="cta-sn" style="color: teal;font-weight: bold;">Shop Now ></span>
+                                                            <span class="cta-sn"
+                                                                style="color: teal;font-weight: bold;">Shop Now ></span>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -711,266 +1060,78 @@
                                         </tr>
                                     </table>
                                 </td>
-                            </tr>
-                        </table>
-                    </td>
-
-                </tr>
-
-
-                <!-- <tr>
-                    <td>
-                        <table width="100%">
-
-                            
-
-                            <tr>
-                                <td>
-                                    <table width="100%">
+                                <td class="column">
+                                    <table>
                                         <tr>
-                                            <td><img src="./../assets/children-slide-11.png" alt=""></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>BABY</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <button>Shop Now</button>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table width="100%">
-                                        <tr>
-                                            <td><img src="./../assets/15-Multi-Tasking-Face-Creams-That-Every-Busy-Woman-Must-Have-5-1.png"
+                                            <td><img class="fluid-image"class="categ-img"
+                                                    src="./../assets/15-Multi-Tasking-Face-Creams-That-Every-Busy-Woman-Must-Have-5-1.png"
                                                     alt=""></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <p>FACE</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <button>Shop Now</button>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table width="100%">
-                                        <tr>
-                                            <td><img src="./../assets/120-CZ686352.png" alt=""></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>HAIR</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <button>Shop Now</button>
+                                            <td class="category">
+                                                <table>
+                                                    <tr>
+                                                        <td style="padding-bottom: 10px;">
+                                                            <p>FACE</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="shop-now-cta">
+                                                        <td>
+                                                            <span class="cta-sn"
+                                                                style="color: teal;font-weight: bold;">Shop Now ></span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
-                                <td>
-                                    <table width="100%">
+                                <td class="column">
+                                    <table>
                                         <tr>
-                                            <td><img src="./../assets/how-to-moisturize-body-in-winter-5c19ee05ba17090001a0dfe6-1.png"
+                                            <td><img class="fluid-image"class="categ-img" src="./../assets/120-CZ686352.png" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="category">
+                                                <table>
+                                                    <tr>
+                                                        <td style="padding-bottom: 10px;">
+                                                            <p>HAIR</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="shop-now-cta">
+                                                        <td>
+                                                            <span class="cta-sn"
+                                                                style="color: teal;font-weight: bold;">Shop Now ></span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table>
+                                        <tr>
+                                            <td><img class="fluid-image"class="categ-img"
+                                                    src="./../assets/how-to-moisturize-body-in-winter-5c19ee05ba17090001a0dfe6-1.png"
                                                     alt=""></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <p>BODY</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <button>Shop Now</button>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <table width="100%">
-
-                                    <tr>
-                                        <td>
-                                            <p>Our Goodness Inside Promise</p>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="./../assets/Group 9234.png" alt="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>BEST OF NATURE</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="./../assets/Group 9234.png" alt="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>BEST OF NATURE</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="./../assets/Group 9234.png" alt="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>BEST OF NATURE</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="./../assets/Group 9234.png" alt="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>BEST OF NATURE</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                </table>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <table width="100%">
-
-                                        <tr>
-                                            <td>
-                                                <p>Mamaearth Safety Checklist</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <table width="100%">
+                                            <td class="category">
+                                                <table>
                                                     <tr>
-                                                        <td>
-                                                            <img src="./../assets/Group 9430.png" alt="">
+                                                        <td style="padding-bottom: 10px;">
+                                                            <p>BODY</p>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="shop-now-cta">
                                                         <td>
-                                                            <p>Contactless Delivery</p>
+                                                            <span class="cta-sn"
+                                                                style="color: teal;font-weight: bold;">Shop Now ></span>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                            </td>
-                                            <td>
-                                                <table width="100%">
-                                                    <tr>
-                                                        <td>
-                                                            <img src="./../assets/Group 9430.png" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p>Contactless Delivery</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <table width="100%">
-                                                    <tr>
-                                                        <td>
-                                                            <img src="./../assets/Group 9430.png" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p>Contactless Delivery</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <table width="100%">
-                                                    <tr>
-                                                        <td>
-                                                            <img src="./../assets/Group 9430.png" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p>Contactless Delivery</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <table width="100%">
-                                        <tr>
-                                            <td>
-                                                <p>Our Corporate Address</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>BLM Tower, 4th Floor, Sector 44, Gurugram, Haryana, India - 122003
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
-                                                <a href=""><img src="./../assets/Icon awesome-facebook-f.png"
-                                                        alt=""></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -978,78 +1139,292 @@
                             </tr>
                         </table>
                     </td>
-                </tr> -->
 
-                <!-- <tr>
-                    <td>
-                        <p>Track Order</p>
-                    </td>
-                    <td>
-                        <p>Track Order</p>
-                    </td>
-                    <td>
-                        <p>Track Order</p>
-                    </td>
-                </tr> -->
+                </tr> <!-- end of category-shop/footer -->
 
+                <tr>
 
+                    <style>
+                        .goodness-inside .max-4-columns .column p {
+                            font-size: 10px;
+                        }
+                    </style>
 
+                    <td class="goodness-inside mood padding">
+                        <table>
 
-
-
-                <!-- footer -->
-
-                <!-- <tr>
-                    <td>
-                        <table width="100%" style="border-spacing: 0;" leftmargin="0" topmargin="0" marginwidth="0"
-                            marginheight="0">
                             <tr>
-                                <td style="padding:15px; padding-top: 30px;text-align: center;">
-                                    <table width="100%" style="border-spacing: 0;">
-                                        <tr>
-                                            <td class="padding">
-                                                <a target="_blank" class="padding"
-                                                    href="https://www.facebook.com/Mamaearthindia/"><img
-                                                        src="https://mamaearthp.imgix.net/wysiwyg/facebook.png?auto=format"
-                                                        width="30" alt=""></a>
-                                                <a target="_blank" class="padding"
-                                                    href="https://www.linkedin.com/company/honasa-consumer-pvt-ltd/"><img
-                                                        src="https://mamaearthp.imgix.net/wysiwyg/Linkedin.png?raw=true"
-                                                        width="30" alt=""></a>
-                                                <a target="_blank" class="padding"
-                                                    href="https://www.youtube.com/channel/UC5qhqSIcahBKKMEdLPFqeVA"><img
-                                                        src="https://mamaearthp.imgix.net/wysiwyg/youtube.png?auto=format"
-                                                        width="30" alt=""></a>
-                                                <a target="_blank" class="padding"
-                                                    href="https://www.instagram.com/mamaearth.in/?hl=en"><img
-                                                        src="https://mamaearthp.imgix.net/wysiwyg/instagram.png?auto=format"
-                                                        width="30" alt=""></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="padding">
-                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">
-                                                    <a href="tel:+918750476476">
-                                                        Call: +91
-                                                        8750476476
-                                                    </a>
-                                                </p>
-                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">Email:
-                                                    <a href="mailto:care@mamaearth.in">
-                                                        care@mamaearth.in
-                                                    </a>
-                                                </p>
-                                                <p style="font-size: 18px;color: #000001;margin-bottom: 13px;">
-                                                    Visit us at: wwww.mamaearth.in
-                                                </p>
-                                            </td>
-                                        </tr>
+                                <td>
+                                    <h3>Our Goodness Inside Promise</h3>
+                                </td>
+                            </tr>
+
+                            <tr class="max-4-columns">
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9425.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>BEST OF NATURE</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9424.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>No Toxins</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9423.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Plastic Positive</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9422.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>CRUELTY FREE</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                </tr> -->
+
+                </tr> <!-- end of goodness-inside/footer -->
+
+                <tr>
+
+                    <style>
+                        .safety-checklist {
+                            background-color: #DBDBDB;
+                        }
+
+                        .safety-checklist .max-4-columns .column {
+                            max-width: min-content;
+                            text-align: center;
+                        }
+
+                        .safety-checklist .max-4-columns .column p {
+                            font-size: 12px;
+                            font-weight: 800;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            .safety-checklist .max-4-columns .column {
+                                padding: 0 20px;
+                            }
+                        }
+                    </style>
+
+                    <td class="safety-checklist mood padding">
+                        <table>
+
+                            <tr>
+                                <td>
+                                    <h3>MAMAEARTH SAFETY CHECKLIST</h3>
+                                </td>
+                            </tr>
+
+                            <tr class="max-4-columns">
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9378.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>CONTACTLESS DELIVERY</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9379.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>TEMPERATURE CHECKS</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9396.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>SAFE PACKAGING</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="column">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img class="fluid-image"src="./../assets/Group 9405.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>REGULAR SENITISATION</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr> <!-- end of safety-checklist/footer -->
+
+                <tr>
+                    <style>
+                        .address-bar p {
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+
+                        .address-bar .address {
+                            padding: 0 40px;
+                            text-align: center;
+                        }
+
+                        .address-bar .social-icons {
+                            text-align: center;
+                        }
+
+                        .address-bar .social-icons img {
+                            padding: 10px;
+                        }
+                    </style>
+                    <td class="address-bar mood padding">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3>Our Corporate Address</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="address">
+                                    <p>BLM Tower, 4th Floor, Sector 44, Gurugram, Haryana, India - 122003</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="social-icons">
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon awesome-facebook-f.png" alt=""></a>
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon awesome-twitter.png" alt=""></a>
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon ionic-ios-mail.png" alt=""></a>
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon metro-instagram.png" alt=""></a>
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon metro-youtube.png" alt=""></a>
+                                    <a href=""><img class="fluid-image"src="./../assets/Icon awesome-pinterest.png" alt=""></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> <!-- end of address-bar/footer -->
+
+                <tr>
+                    <style>
+                        .easy-actions {}
+
+                        .easy-actions table td {
+                            background-color: #6DA523;
+                            padding: 15px;
+                            text-align: center;
+                            color: #ffffff;
+                        }
+
+                        .easy-actions table td:nth-child(2) {
+                            border-left: 1px solid white;
+                            border-right: 1px solid white;
+                        }
+
+                        .easy-actions table td * {
+                            display: inline-block;
+                            vertical-align: bottom;
+                        }
+
+                        .easy-actions table td p {
+                            padding-top: 8px;
+                        }
+
+                        .easy-actions table td img {
+                            padding: 0 10px;
+                        }
+                    </style>
+                    <td class="easy-actions">
+                        <table>
+                            <tr>
+                                <td> <img class="fluid-image"src="./../assets/pin (4).png" alt="">
+                                    <p>Track Order</p>
+                                </td>
+                                <td> <img class="fluid-image"src="./../assets/box.png" alt="">
+                                    <p>Free & Easy Returns</p>
+                                </td>
+                                <td> <img class="fluid-image"src="./../assets/phone (3).png" alt="">
+                                    <p>Customer Support</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> <!-- end of easy-actions/footer -->
 
             </table>
 
