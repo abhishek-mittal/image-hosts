@@ -201,28 +201,36 @@
             width: 100%;
         }
 
-        .green-bottom{
-            border-bottom: 3px solid #F2F9E8;
+        .font-12 {
+            font-size: 12px;
         }
-
-        .pyt-5 {
-            padding-top: 0.5em;
-        }
-
-        .py-10 {
-            padding: 1em 0;
-        }
-        .pyb-10 {
-            padding-bottom: 1em ;
-        }
-        .pyt-10 {
-            padding-top: 1em;
-        }
-
+        
         .rupee::before {
             content: "\20B9 ";
             margin-left: 2px;
             margin-right: 2px;
+            font-weight: inherit;
+        }
+
+        .seperated-para > p {
+            padding: 10px 0;
+        }
+
+        .theme-blue-a {
+            color: #00AFEF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .t-right {
+            text-align: right;
+        }
+        .t-left {
+            text-align: left;
+        }
+        
+        .green-bottom{
+            border-bottom: 3px solid #F2F9E8;
         }
 
     </style>
@@ -265,7 +273,7 @@
                                 <tr>
                                     <td align="center"><img class="fluid-image"
                                             src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_mamaearth/assets/Logopng.png"
-                                        alt=""></td>
+                                            alt=""></td>
                                 </tr>
                             </table>
                         </td>
@@ -288,16 +296,12 @@
                             font-size: 12px;
                         }
 
-                        .order-confirmation-status-container .order-status{
+                        .order-confirmation-status-container .order-status {
                             padding: 15px 0;
                         }
 
                         .pyb-5 {
                             padding-bottom: 0.5em;
-                        }
-
-                        .pyb-5 {
-                            padding-bottom: 1em;
                         }
 
                         .blue-button {
@@ -309,35 +313,23 @@
                             text-align: center;
                             white-space: nowrap;
                         }
+                        .note-info-container {
+                            text-align: left;
+                            margin: 10px;
+                        }
 
-                        .theme-color {
+                        .note-info-container p {
+                            padding: 15px;
+                            background-color: #EAFFC7;
+                            border-radius: 10px;
+                            font-size: 12px;
                             color: #6DA523;
                         }
 
-                        .theme-blue {
-                            color: #00AFEF;
-                        }
-
-                        .font-12 {
-                            font-size: 12px;
-                        }
-
-                        .font-14 {
-                            font-size: 14px;
-                        }
-
-                        .font-18 {
+                        .note-info-container p .title {
                             font-size: 18px;
+                            font-weight: 600;
                         }
-
-                        .cashback-details-container {
-                            border: 1px solid #DBDBDB;
-                            padding: 1em;
-                            border-radius: 4px;
-                            overflow: hidden;
-                            display: block;
-                        }
-
                     </style>
                     <td class="order-confirmation-status-container">
                         <table align="center">
@@ -346,98 +338,47 @@
                                     <table>
                                         <tr>
                                             <td class="pyb-5" align="center">
-                                                <img class="fluid-image"
-                                                    src="./../assets/money22xpng5HHHX4W.png"
+                                                <img class="fluid-image" src="./../assets/Path143822xpng22ZYC3S.png"
                                                     alt="" width="40">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="pyb-5" align="center">
-                                                <h3>Cashback Credited</h3>
+                                                <h3>Support Request Received</h3>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="pyb-5" align="left">
-                                    <p class="pyb-5">Hi Aman,</p>
-                                    <p>
-                                        Thank you for shopping with Mamaearth. Your trust and love make us who we are! Through your last purchase, you have received cashback in your Mamapay wallet.
-                                    </p>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="pyb-5" align="center" >
-                                    <div class="cashback-details-container">
-                                        <table>
-                                            
-                                            <tr>
-                                                <td class="pyb-5"> <span class="theme-color font-12">Credited On :</span> <strong class="font-14">04 July, 2020</strong> </td>
-                                                <td rowspan="2" class="font-14" width="180" align="center">
-                                                    <strong >Cashback Amount</strong><br/>
-                                                    <p class="py-10" >
-                                                        <strong class="font-18 rupee">  350 <img style="vertical-align: middle;" width="20" src="./../assets/tick12xpng7LZCA8Y.png" alt=""> </strong>
-                                                    </p>
-                                                    
-                                                </td>
-                                            </tr>
-    
-                                            <tr>
-                                                <td class="font-12">
-                                                    <p class="pyb-5">Order ID : <a href="#" class="theme-blue">#90001297411</a></p>
-                                                    <p>Cashback against your order for "Hair Fall Control Regime Combo" +1 more has been credited.</p>
-                                                </td>
-                                            </tr>
-                                            
-                                        </table>    
+                                <td class="pyb-5 seperated-para" align="left">
+                                    <p>Hi Aman,</p>
+
+                                    <p> Your support request has been created and assigned to one of our customer service representatives. Your ticket number is <span class="theme-blue-a">#546215</span> . </p>
+
+                                    <div class="note-info-container">
+                                        <p>
+                                            <span class="title">
+                                                Note : -
+                                            </span>
+                                            We are operating under our COVID-19 contingency plan for business continuity and safety of our team. Over 200+ members of our team are working from home and due to this, your support ticket can take an additional 48 hours to be responded to.
+                                        </p>
                                     </div>
+                                    
+                                    <p> We truly appreciate your cooperation and patience. </p>
+                                    <p>
+                                        Stay safe, <br/> Team Mamaearth
+                                    </p> 
                                 </td>
                             </tr>
-
                             <tr>
-                                <td align="center" class="pyb-10 green-bottom">
-                                        <strong class="font-14">
-                                            <img style="vertical-align: middle;" src="./../assets/Wallet.png" alt="">
-                                            Your current wallet balance amount is
-                                        </strong>
-                                        <span style="vertical-align: middle;" class="font-18 theme-color rupee">750.00</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="pyt-10">
-                                    <table>
-                                        <tr>
-                                            <td class="pyb-5" align="center">
-                                                <p>Use your mamapay wallet Cashback TODAY and bring home the goodness of nature packed with love & care.</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td align="center">
-                                                <div style="display:inline-block;" class="blue-button track-order">Track Order</div>
-                                            </td>
-                                        </tr>
-
-                                    </table>
-                                </td>
+                                <td class="green-bottom"></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
 
-                <tr>
-                    <style>
-                        .hurry-banner {
-                            padding: 5px 60px;
-                        }
-                    </style>
-                    <td class="hurry-banner"><a href="#">
-                        <img src="./../assets/Group94292xpngRK6H05C.png" class="fluid-width" style="width: 100%;" alt="">
-                    </a></td>
-                </tr>  <!-- end of updates-on/main -->
-
+         
                 <!-- // footer -->
 
                 <style>
