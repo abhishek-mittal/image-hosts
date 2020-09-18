@@ -204,12 +204,28 @@
         .color-shady {
             color: #5C5C5C;
         }
+
+        .dark, .dark,
+        .dark *:not(.shaded-address):not(.themebutton):not(.safety-checklist):not(.easy-actions) {
+            background: #222 ;
+        }
+        .dark,
+        .dark *:not(.themebutton):not(.special-links):not(.safety-checklist) {
+            color: #e6e6e6;
+        }
+        .dark * {
+            border-color: #eaeaea1c !important;
+        }
+
+        .dark p:not(.tdc-green):not(.safety-checklist p):not(.easy-actions) {
+            color: #e6e6e6 !important;
+        }
     </style>
 
 
 </head>
 
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body class="dark" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <center class="wrapper">
         <div class="webkit">
 
@@ -226,11 +242,13 @@
                     <tr>
 
                         <style>
-
+                            .mamaearth-logo-header *{
+                                background-color: #E7FFFB !important;
+                            }
                             .mamaearth-logo-header {
-                                padding: 5px 60px;
                                 text-align: center;
                                 border-bottom: 1px solid #F2F9E8;
+                                background-color: #E7FFFB !important;
                             }
 
                             .get-the-app-section>* {
@@ -242,15 +260,9 @@
                             }
                         </style>
                         <td class="mamaearth-logo-header">
-                            <table>
-                                <tr>
-                                    <td align="center">
-                                        <img class="fluid-image"
-                                            src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/logo.png"
+                            <img class="fluid-image" width="600"
+                                            src="./../assets/header.png"
                                             alt="">
-                                    </td>
-                                </tr>
-                            </table>
                         </td>
                     </tr>
 
@@ -461,10 +473,10 @@
                             padding-bottom: 10px;
                         }
 
-                        .payment-information .payment-information--breakup {
+                        .payment-information .payment-information--breakup, .payment-information .payment-information--breakup * {
 
                             font-family: Roboto;
-                            background-color: #F8F8F8;
+                            background-color: #313131  !important;
 
                         }
 
@@ -493,7 +505,7 @@
                         }
 
                         .payment-information .payment-information--breakup .payment-information-wrapper {
-                            border-bottom: 1px solid #EAEAEA;
+                            border-bottom: 1px solid #eaeaea1c;
                             padding: 10px;
                         }
 
@@ -584,6 +596,7 @@
                 <tr>
 
                     <style>
+                        
                         .delivery-address {
                             padding: 5px 60px;
                             color: #1D1D1D;
@@ -598,6 +611,9 @@
                             font-size: 16px;
                         }
 
+                        td.shaded-address,td.shaded-address * {
+                            background-color: #313131 !important;
+                        }
                         .delivery-address .shaded-address {
                             padding: 10px;
                             background: #F8F8F8;
@@ -668,11 +684,11 @@
                         }
 
                         .themebutton {
-                            background: #279989 0% 0% no-repeat padding-box;
-                            border: 1px solid #279989;
+                            background: #279989 0% 0% no-repeat padding-box !important;
+                            border: 1px solid #279989 !important;
                             border-radius: 5px;
                             padding: 10px;
-                            color: white;
+                            color: white !important;
                             transform-origin: center;
                             transition-timing-function: ease-in-out;
                             transition-duration: 0.3s;
@@ -786,6 +802,9 @@
                                         padding: 15px 15px 0 15px;
                                     }
 
+                                    .safety-checklist, .safety-checklist * {
+                                        background-color: #313131 !important;
+                                    }
                                     .safety-checklist {
                                         background-color: #F8F8F8;
                                         border: 1px solid #DBDBDB;
@@ -793,7 +812,7 @@
                                     }
 
                                     .safety-checklist p {
-                                        color: #5C2E7C;
+                                        color: #9b62c3 !important;
                                     }
 
                                     .safety-checklist .max-4-columns .column {
@@ -969,8 +988,13 @@
                                 <style>
                                     .easy-actions {}
 
+                                    .easy-actions table td * {
+
+                                        background-color: #279989 !important;
+                                    }
+
                                     .easy-actions table td {
-                                        background-color: #279989;
+                                        background-color: #279989 !important;
                                         padding: 6px;
                                         text-align: center;
                                         color: #ffffff;
