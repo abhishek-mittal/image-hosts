@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Order Placed and Confirmed</title>
+    <title>Sorry! We Had to Cancel Your Order</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -226,7 +226,6 @@
                     <tr>
 
                         <style>
-
                             .tdc-logo-header {
                                 /* padding: 5px 60px;
                                 text-align: center;
@@ -243,8 +242,8 @@
                         </style>
                         <td class="tdc-logo-header">
                             <img class="fluid-image" width="600"
-                                            src="https://thedermaco.com/emailer-images/20200921/header@2x.png"
-                                            alt="">
+                                src="https://thedermaco.com/emailer-images/20200921/header@2x.png"
+                                alt="">
                         </td>
                     </tr>
 
@@ -276,37 +275,20 @@
                         <table align="center">
                             <tr>
                                 <td class="pyb-5" align="center">
-                                    <img class="fluid-image"
-                                        src="https://thedermaco.com/emailer-images/20200921/correct.png"
-                                        alt="" width="30">
+                                    <img class="fluid-image" src="https://thedermaco.com/emailer-images/20200921/cancelled-box.png" alt="" width="40">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="pyb-5 color-shady" align="center">
-                                    <h3>Order Placed & Confirmed</h3>
+                                    <h3>Sorry! We Had to Cancel Your Order</h3>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="pyb-5" align="left">
-                                    <p>Hi Aman, <br><br> We're prepping your bag of breakthrough solutions, containing
-                                        the
-                                        product(s) you picked. Once we've shipped your order, you'll get an email with
-                                        your shipping and tracking information.</p>
+                                    <p>Hi Aman, <br><br> Due to some technical difficulties at our end, we had to cancel your order. If you have already paid for the order, we will refund the amount in 7-10 working days.</p>
                                 </td>
                             </tr>
-                            <!-- <tr>
-                                <td class="pyb-5" align="center">
-                                    <img class="fluid-image"
-                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/assets/Group8648png.png"
-                                        alt="">
-                                </td>
-                            </tr> -->
-                            <tr>
-                                <td class="pyb-5" align="left">
-                                    <p>We know you can't wait to get your hands on it, so we've begun prepping for it
-                                        right away.</p>
-                                </td>
-                            </tr>
+
                         </table>
                     </td>
                 </tr><!-- end of order-confirmation-status-container/main -->
@@ -372,7 +354,7 @@
                         <table>
                             <tr>
                                 <td class="header">
-                                    <p>Here’s What You Ordered!</p>
+                                    <p>Canceled Item(s) Details</p>
                                 </td>
                             </tr>
                             <tr>
@@ -478,8 +460,8 @@
 
                         }
 
-                        .payment-information .payment-information--breakup .payment-information--breakup--value.discount {
-                            color: #FF0000;
+                        .discount {
+                            color: #FF0000 !important;
                         }
 
                         .payment-information .payment-information--breakup .payment-information--breakup--value.total {
@@ -493,6 +475,12 @@
 
                         .payment-information .payment-information--breakup .payment-information-wrapper.last {
                             border-bottom: none;
+                        }
+
+                        .focused {
+                            border: 1px solid #989898 !important;
+                            border-radius: 8px;
+                            overflow: hidden;
                         }
 
                         .payment-information .footing {
@@ -530,42 +518,31 @@
                                     <table>
                                         <tr>
                                             <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Subtotal</p>
-                                                <p class="d-ib payment-information--breakup--value"> &#8377; 1475.00</p>
+                                                <p class="payment-information--breakup--title">Order ID</p>
+                                                <p class="payment-information--breakup--value">90001297411</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information-wrapper">
+                                                <p class="payment-information--breakup--title discount" style="font-weight: bold;">Date of Cancellation
+                                                </p>
+                                                <p class="payment-information--breakup--value"> Jul 13, 2020</p>
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Order ID</p>
-                                                <p class="d-ib payment-information--breakup--value">90001297411</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Shipping & Handling
-                                                </p>
-                                                <p class="d-ib payment-information--breakup--value tdc-green"> Free</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Cashback</p>
-                                                <p class="d-ib payment-information--breakup--value"> - &#8377; 205.00
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Mode Of Payment</p>
-                                                <p class="d-ib payment-information--breakup--value"> &#8377; 00.00</p>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td class="py=5 payment-information-wrapper last">
-                                                <p class="d-ib payment-information--breakup--title">Grand Total</p>
-                                                <p class="payment-information--breakup--value total"> &#8377; 45.92</p>
+                                                <p class="payment-information--breakup--title">Order Value</p>
+                                                <p class="payment-information--breakup--value"> &#8377; 1479.00
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py=5 payment-information-wrapper focused"
+                                                vertical-align="middle">
+                                                <p class="payment-information--breakup--title">Total Refund Amount</p>
+                                                <p class="payment-information--breakup--value total"> &#8377; 1479.00
+                                                </p>
                                             </td>
                                         </tr>
                                     </table>
@@ -578,78 +555,62 @@
                 <tr>
 
                     <style>
-                        .delivery-address {
-                            padding: 5px 60px;
+                        .expected-refund {
+                            padding: 15px 60px 0px 60px;
                             color: #1D1D1D;
                         }
-
-
-                        .delivery-address .address-heading {
-                            padding: 8px 0;
-                        }
-
-                        .delivery-address .address-heading h3 {
-                            font-size: 16px;
-                        }
-
-                        .delivery-address .shaded-address {
-                            padding: 10px;
-                            background: #F8F8F8;
+                        .expected-refund .refund-wrapper{
+                            background-color: #F8F8F8;
+                            border: 1px solid #FDAD00;
                             border-radius: 4px;
+                            padding: 10px;
                         }
-
-                        .delivery-address .shaded-address .shaded-address--name {
-                            color: #000;
-                            font-weight: 600;
-                            margin-bottom: 8px;
-                            font-size: 14px;
-                        }
-
-                        .delivery-address .shaded-address .office-button {
-                            border: 1px solid #989898;
-                            border-radius: 5px;
-                            background: #EAEAEA;
-                            padding: 4px 6px;
-                            cursor: pointer;
+                        .expected-refund .refund-wrapper .notice{
+                            color: #5C5C5C;
                             font-size: 12px;
+                            padding: 5px 0;
                         }
 
-                        .delivery-address .shaded-address .shaded-address--address {
-                            max-width: 273px;
+                        .expected-refund h3 {
+                            font-size: 16px;
+                            padding: 5px 0;
+                        }
+
+                        .status-check {
+                            padding: 5px 0;
+                            font-size: 12px;
+                            color: #5C5C5C;
+                        }
+
+                        .status-check img {
+                            padding-right: 5px;
+                            vertical-align: middle;
+                        }
+
+                        .status-check strong {
+                            color: #080909;
                             font-size: 14px;
-                            /* font-family: Regular, Roboto; */
                         }
                     </style>
 
-                    <td class="delivery-address">
+                    <td class="expected-refund">
                         <table>
                             <tr>
-                                <td class="address-heading">
-                                    <h3>Delivery Address</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="shaded-address">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <p class="shaded-address--name">Aman Tiwari</p>
-                                            </td>
-                                            <td style="text-align: right;"><span class="office-button">Office</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="shaded-address--address">BLM Tower, 4th Floor, Sector 44,
-                                                    Gurugram, Haryana, India - 122003</p>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <td class="refund-wrapper">
+                                    <h3>Your Expected Refund Timeline</h3>
+                                    <p class="notice">Once the refund is initiated from our end, your bank/payment
+                                        gateway takes time to process. Below is the expected timeline:</p>
+                                    <div>
+                                        <p class="status-check"><img src="https://thedermaco.com/emailer-images/20200921/tick.png"> Refund to Card/Bank
+                                            Account: <strong>₹1479.00</strong></p>
+                                        <p class="status-check"><img src="https://thedermaco.com/emailer-images/20200921/tick.png"> Expected refund
+                                            time: <strong>7-10 days</strong></p>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                </tr> <!-- end of delivery-address/main -->
+                </tr> <!-- end of expected-refund/main -->
 
                 <!-- secondary footer -->
 
@@ -659,6 +620,9 @@
                         .view-or-manage-section {
                             padding: 20px 60px;
                             color: #5C5C5C;
+                        }
+                        .view-or-manage-section .themebutton {
+                            padding: 10px 40px;
                         }
 
                         .themebutton {
@@ -702,12 +666,12 @@
 
                     <td class="view-or-manage-section" align="center">
                         <div>
-                            <div class="themebutton">View Or Manage Order</div>
-                            <h3>What Happens Next?</h3>
-                            <p class="py-5">We will send you a confirmation once your order is shipped.</p>
-                            <p>If you want to reach us, you can call us at <a href="tel:+918750476476"
+                            <h3>Need Help? Get In Touch</h3>
+                            <p>Shoot us an email for any questions and queries you have at <a href="tel:+918750476476"
                                     class="special-links">+91 87504 76476</a> or email us at
                                 <a href="mailto:care@thedermaco.com" class="special-links">care@thedermaco.com</a>.</p>
+                            <h3>You can also contact us via</h3>
+                            <div class="themebutton">Live Chat</div>
                         </div>
                     </td>
                 </tr> <!-- end of view-or-manage-section/secendory-footer -->
@@ -732,167 +696,51 @@
                     </style>
 
                     <td style="padding: 0 60px;">
+                        <style>
+                            * {
+                                padding: 0;
+                                margin: 0;
+                            }
+
+                            .footer {
+                                border: 2px solid;
+                            }
+
+                            .max-4-columns {
+                                text-align: center;
+                            }
+
+                            .max-4-columns .column {
+                                display: inline-block;
+                                vertical-align: top;
+                                padding: 0 15px;
+                                text-align: center;
+                            }
+
+                            .mood p {
+                                text-align: center;
+                                color: #1D1D1D;
+                                font-weight: 800;
+                                font-family: Arial, Helvetica, sans-serif;
+                                letter-spacing: 0px;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                padding: 10px 0;
+                            }
+
+                            .mood h3 {
+                                letter-spacing: 0px;
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-size: 16px;
+                                padding: 10px 0;
+                            }
+
+                            .padding {
+                                padding: 15px 15px 0 15px;
+                            }
+                        </style>
                         <table>
-                            <tr>
-
-
-                                <style>
-                                    * {
-                                        padding: 0;
-                                        margin: 0;
-                                    }
-
-                                    .footer {
-                                        border: 2px solid;
-                                    }
-
-                                    .max-4-columns {
-                                        text-align: center;
-                                    }
-
-                                    .max-4-columns .column {
-                                        display: inline-block;
-                                        vertical-align: top;
-                                        padding: 0 15px;
-                                        text-align: center;
-                                    }
-
-                                    .mood p {
-                                        text-align: center;
-                                        color: #1D1D1D;
-                                        font-weight: 800;
-                                        font-family: Arial, Helvetica, sans-serif;
-                                        letter-spacing: 0px;
-                                        text-transform: uppercase;
-                                        font-size: 12px;
-                                        padding: 10px 0;
-                                    }
-
-                                    .mood h3 {
-                                        letter-spacing: 0px;
-                                        text-transform: uppercase;
-                                        text-align: center;
-                                        font-size: 16px;
-                                        padding: 10px 0;
-                                    }
-
-                                    .padding {
-                                        padding: 15px 15px 0 15px;
-                                    }
-
-                                    .safety-checklist {
-                                        background-color: #F8F8F8;
-                                        border: 1px solid #DBDBDB;
-                                        border-bottom: none;
-                                    }
-
-                                    .safety-checklist p {
-                                        color: #5C2E7C;
-                                    }
-
-                                    .safety-checklist .max-4-columns .column {
-                                        max-width: min-content;
-                                        text-align: center;
-                                        padding: 0 12px;
-                                    }
-
-                                    .safety-checklist table {
-                                        text-align: center;
-                                    }
-
-                                    .safety-checklist .max-4-columns .column p {
-                                        font-size: 12px;
-                                        font-weight: 600;
-                                    }
-                                </style>
-
-                                <td class="safety-checklist mood padding">
-                                    <table>
-
-                                        <tr>
-                                            <td>
-                                                <h3>DERMACO SAFETY CHECKLIST</h3>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="max-4-columns">
-                                            <td class="column">
-                                                <table width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/contactless.png"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>CONTACTLESS DELIVERY</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td class="column">
-                                                <table width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/temperature.png"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>TEMPERATURE CHECKS</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td class="column">
-                                                <table width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/safe.png"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>SAFE PACKAGING</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td class="column">
-                                                <table width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/Regular@2x.png"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>REGULAR SENITISATION</p>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-
-                            </tr> <!-- end of safety-checklist/footer -->
 
                             <tr>
                                 <style>

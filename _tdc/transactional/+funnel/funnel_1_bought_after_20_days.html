@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Order Placed and Confirmed</title>
+    <title>Funnel 1_Bought_After 20 Days</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -194,7 +194,7 @@
             border-spacing: 0;
             font-family: sans-serif;
             color: #4a4a4a;
-            /* border: 2px solid black; */
+            border: 2px solid black;
         }
 
         table {
@@ -203,6 +203,21 @@
 
         .color-shady {
             color: #5C5C5C;
+        }
+
+        .color-dark {
+            color: #000000 !important;
+        }
+
+        .tdc-green {
+            color: #279989 !important;
+        }
+
+        .asr {
+            border-bottom: 3px solid #F2F9E8;
+        }
+        p {
+            line-height: 20px;
         }
     </style>
 
@@ -226,13 +241,6 @@
                     <tr>
 
                         <style>
-
-                            .tdc-logo-header {
-                                /* padding: 5px 60px;
-                                text-align: center;
-                                border-bottom: 1px solid #F2F9E8; */
-                            }
-
                             .get-the-app-section>* {
                                 display: inline-block;
                                 vertical-align: bottom;
@@ -243,8 +251,8 @@
                         </style>
                         <td class="tdc-logo-header">
                             <img class="fluid-image" width="600"
-                                            src="https://thedermaco.com/emailer-images/20200921/header@2x.png"
-                                            alt="">
+                                src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/header@2x.png"
+                                alt="">
                         </td>
                     </tr>
 
@@ -254,15 +262,45 @@
 
                 <tr>
                     <style>
-                        .order-confirmation-status-container {
-                            padding: 10px 60px;
+                        .wallet-and-banner-container {
+                            padding: 20px 60px 0px;
                             background-color: #ffffff;
                         }
 
-                        .order-confirmation-status-container p {
+                        .wallet-and-banner-container p {
                             font-size: 12px;
                             color: #5C5C5C;
                         }
+
+                        .wallet-and-banner-container .banner-solid {
+                            background-color: #279989;
+                            padding: 10px;
+                            border-radius: 4px;
+                            color: white;
+                            font-size: 12px;
+                            line-height: 20px;
+                            text-align: center;
+                        }
+
+                        .wallet-and-banner-container .banner-container {
+                            padding: 20px 0;
+                        }
+
+                        .wallet-and-banner-container .wallet-ballance {
+                            text-align: center;
+                            padding-bottom: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .wallet-and-banner-container .wallet-ballance>* {
+                            display: inline-block;
+                            text-align: center;
+                            vertical-align: middle;
+                            color: black;
+                            font-weight: bold;
+                            padding: 2px;
+                        }
+
 
                         .pyb-5 {
                             padding-bottom: 0.5em;
@@ -271,385 +309,36 @@
                         .font-20 {
                             font-size: 20px;
                         }
+
+                        img {
+                            vertical-align: middle;
+                        }
                     </style>
-                    <td class="order-confirmation-status-container">
+                    <td class="wallet-and-banner-container">
                         <table align="center">
-                            <tr>
-                                <td class="pyb-5" align="center">
-                                    <img class="fluid-image"
-                                        src="https://thedermaco.com/emailer-images/20200921/correct.png"
-                                        alt="" width="30">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pyb-5 color-shady" align="center">
-                                    <h3>Order Placed & Confirmed</h3>
-                                </td>
-                            </tr>
+
                             <tr>
                                 <td class="pyb-5" align="left">
-                                    <p>Hi Aman, <br><br> We're prepping your bag of breakthrough solutions, containing
-                                        the
-                                        product(s) you picked. Once we've shipped your order, you'll get an email with
-                                        your shipping and tracking information.</p>
+                                    <p>Hi Aman, <br>
+                                        We hope your customized regimen bought you closer to your goals! 💗 It’s now time for a refill! 👨👩
+                                    </p>
                                 </td>
                             </tr>
-                            <!-- <tr>
-                                <td class="pyb-5" align="center">
-                                    <img class="fluid-image"
-                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/assets/Group8648png.png"
-                                        alt="">
-                                </td>
-                            </tr> -->
+
+
                             <tr>
-                                <td class="pyb-5" align="left">
-                                    <p>We know you can't wait to get your hands on it, so we've begun prepping for it
-                                        right away.</p>
+                                <td class="banner-container">
+                                    <div class="main-banner">
+                                        <img src="./../assets/temp-ban2.png" alt="">
+                                    </div>
+                                    <p style="text-align: center;padding-top: 10px;">All our products are safe, potent and approved by dermatologists for great efficacy.</p>
                                 </td>
                             </tr>
+
                         </table>
                     </td>
-                </tr><!-- end of order-confirmation-status-container/main -->
+                </tr><!-- end of wallet-and-banner-container/main -->
 
-                <tr>
-
-                    <style>
-                        .product-card-list {
-                            padding: 5px 60px;
-                        }
-
-                        .product-card-list .product-card-list--card {
-                            display: block;
-                            margin: 0 0 5px 0;
-                            border-radius: 4px;
-                            border: 1px solid #DBDBDB;
-                            background-color: #ffffff;
-                        }
-
-                        .product-card-list .product-card-list--card .product-card-list--card--image {
-                            max-width: 120px;
-                            max-height: 120px;
-                        }
-
-                        .product-card-list .product-card-list--card .product-card-list--card--details {
-                            padding: 0 12px;
-                        }
-
-                        .product-card-list .product-card-list--card .product-card-list--card--details .product-name {
-                            font-weight: 600;
-                            font-size: 14px;
-                            padding: 10px 0;
-                            color: #5C5C5C;
-                        }
-
-                        .product-card-list .product-card-list--card .product-card-list--card--details .product-bold-dets {
-                            font-weight: 600;
-                            font-size: 18px;
-                            color: #1D1D1D;
-                            padding: 10px 0;
-                        }
-
-                        .product-card-list .product-card-list--card .product-card-list--card--details .light-title {
-                            font-size: 16px;
-                            color: #989898;
-                            font-weight: 400;
-                        }
-
-                        .t-right {
-                            text-align: right;
-                        }
-
-                        .product-card-list .header p {
-                            text-align: center;
-                            padding: 0 0 10px 0;
-                            color: #1D1D1D;
-                            font-weight: bold;
-                            font-size: 14px;
-                        }
-                    </style>
-
-                    <td class="product-card-list">
-                        <table>
-                            <tr>
-                                <td class="header">
-                                    <p>Here’s What You Ordered!</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="product-card-list--card">
-                                    <table>
-                                        <tr>
-                                            <td class="column product-card-list--card--image"><img class="fluid-image"
-                                                    width="122"
-                                                    src="https://thedermaco.com/emailer-images/20200921/ultra-matte-sunscreen-gel_1_2.png"
-                                                    alt=""></td>
-                                            <td class="column product-card-list--card--details">
-                                                <table>
-                                                    <tr>
-                                                        <td class="product-name" colspan="2">
-                                                            <p>Ultra Matte Sunscreen Gel for Broad Spectrum Protection
-                                                                50g</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="product-bold-dets">
-                                                            <p class=""> <span class="light-title"> Item Price: </span>
-                                                                499.00 </p>
-                                                        </td>
-                                                        <td class="product-bold-dets">
-                                                            <p class="t-right"> <span class="light-title"> Qty: </span>
-                                                                1 </p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="product-card-list--card">
-                                    <table>
-                                        <tr>
-                                            <td class="column product-card-list--card--image"><img class="fluid-image"
-                                                    width="122"
-                                                    src="https://thedermaco.com/emailer-images/20200921/ceramide-_-ha-intense-moisturizer_1_1_2.png"
-                                                    alt=""></td>
-                                            <td class="column product-card-list--card--details">
-                                                <table>
-                                                    <tr>
-                                                        <td class="product-name" colspan="2">
-                                                            <p>Ceramide + HA Intense Moisturizer for Dry Skin 50g</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="product-bold-dets">
-                                                            <p class=""> <span class="light-title"> Item Price: </span>
-                                                                499.00 </p>
-                                                        </td>
-                                                        <td class="product-bold-dets">
-                                                            <p class="t-right"> <span class="light-title"> Qty: </span>
-                                                                1 </p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr> <!-- end of product-card-list/main -->
-
-                <tr>
-
-                    <style>
-                        .payment-information {
-                            padding: 5px 60px;
-                            background-color: #ffffff;
-                        }
-
-                        .payment-information .heading {
-                            border-bottom: 1px solid #cccccc;
-                            padding-bottom: 10px;
-                        }
-
-                        .payment-information .payment-information--breakup {
-
-                            font-family: Roboto;
-                            background-color: #F8F8F8;
-
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information--breakup--title {
-                            text-align: left;
-                            float: left;
-                            font-size: 14px;
-                            color: #5C5C5C;
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information--breakup--value {
-                            text-align: right;
-                            color: #1D1D1D;
-                            font-size: 16px;
-                            font-weight: 600;
-                            float: right;
-
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information--breakup--value.discount {
-                            color: #FF0000;
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information--breakup--value.total {
-                            font-size: 19px;
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information-wrapper {
-                            border-bottom: 1px solid #EAEAEA;
-                            padding: 10px;
-                        }
-
-                        .payment-information .payment-information--breakup .payment-information-wrapper.last {
-                            border-bottom: none;
-                        }
-
-                        .payment-information .footing {
-                            text-align: center;
-                            font-size: 12px;
-                            border-top: 1px solid #cccccc;
-                            border-bottom: 1px solid #cccccc;
-                            padding: 6px 0;
-                        }
-
-                        .payment-information .footing a {
-                            color: #00AFEF;
-                            text-decoration: none;
-                            font-weight: 600;
-                        }
-
-                        .py-5 {
-                            padding: 0.5em 0;
-                        }
-
-                        .d-ib {
-                            display: table-cell;
-                        }
-
-                        .tdc-green {
-                            color: #6DA523 !important;
-                        }
-                    </style>
-
-                    <td class="payment-information">
-                        <table>
-
-                            <tr>
-                                <td class="payment-information--breakup">
-                                    <table>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Subtotal</p>
-                                                <p class="d-ib payment-information--breakup--value"> &#8377; 1475.00</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Order ID</p>
-                                                <p class="d-ib payment-information--breakup--value">90001297411</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Shipping & Handling
-                                                </p>
-                                                <p class="d-ib payment-information--breakup--value tdc-green"> Free</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Cashback</p>
-                                                <p class="d-ib payment-information--breakup--value"> - &#8377; 205.00
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper">
-                                                <p class="d-ib payment-information--breakup--title">Mode Of Payment</p>
-                                                <p class="d-ib payment-information--breakup--value"> &#8377; 00.00</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py=5 payment-information-wrapper last">
-                                                <p class="d-ib payment-information--breakup--title">Grand Total</p>
-                                                <p class="payment-information--breakup--value total"> &#8377; 45.92</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr> <!-- end of payment-information/main -->
-
-                <tr>
-
-                    <style>
-                        .delivery-address {
-                            padding: 5px 60px;
-                            color: #1D1D1D;
-                        }
-
-
-                        .delivery-address .address-heading {
-                            padding: 8px 0;
-                        }
-
-                        .delivery-address .address-heading h3 {
-                            font-size: 16px;
-                        }
-
-                        .delivery-address .shaded-address {
-                            padding: 10px;
-                            background: #F8F8F8;
-                            border-radius: 4px;
-                        }
-
-                        .delivery-address .shaded-address .shaded-address--name {
-                            color: #000;
-                            font-weight: 600;
-                            margin-bottom: 8px;
-                            font-size: 14px;
-                        }
-
-                        .delivery-address .shaded-address .office-button {
-                            border: 1px solid #989898;
-                            border-radius: 5px;
-                            background: #EAEAEA;
-                            padding: 4px 6px;
-                            cursor: pointer;
-                            font-size: 12px;
-                        }
-
-                        .delivery-address .shaded-address .shaded-address--address {
-                            max-width: 273px;
-                            font-size: 14px;
-                            /* font-family: Regular, Roboto; */
-                        }
-                    </style>
-
-                    <td class="delivery-address">
-                        <table>
-                            <tr>
-                                <td class="address-heading">
-                                    <h3>Delivery Address</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="shaded-address">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <p class="shaded-address--name">Aman Tiwari</p>
-                                            </td>
-                                            <td style="text-align: right;"><span class="office-button">Office</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="shaded-address--address">BLM Tower, 4th Floor, Sector 44,
-                                                    Gurugram, Haryana, India - 122003</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr> <!-- end of delivery-address/main -->
 
                 <!-- secondary footer -->
 
@@ -657,7 +346,7 @@
 
                     <style>
                         .view-or-manage-section {
-                            padding: 20px 60px;
+                            padding: 0 60px 20px;
                             color: #5C5C5C;
                         }
 
@@ -692,8 +381,8 @@
                             color: #279989;
                         }
 
-                        a.special-links {
-                            color: #426FFF;
+                        .special-links {
+                            color: #426FFF !important;
                             text-decoration: none;
                             font-size: 14px;
                             font-weight: bold;
@@ -701,14 +390,9 @@
                     </style>
 
                     <td class="view-or-manage-section" align="center">
-                        <div>
-                            <div class="themebutton">View Or Manage Order</div>
-                            <h3>What Happens Next?</h3>
-                            <p class="py-5">We will send you a confirmation once your order is shipped.</p>
-                            <p>If you want to reach us, you can call us at <a href="tel:+918750476476"
-                                    class="special-links">+91 87504 76476</a> or email us at
-                                <a href="mailto:care@thedermaco.com" class="special-links">care@thedermaco.com</a>.</p>
-                        </div>
+                        <p>If you want to reach us, you can call us at <a href="tel:+918750476476"
+                                class="special-links">+91 87504 76476</a> or email us at
+                            <a href="mailto:care@thedermaco.com" class="special-links">care@thedermaco.com</a>.</p>
                     </td>
                 </tr> <!-- end of view-or-manage-section/secendory-footer -->
 
@@ -822,7 +506,7 @@
                                                         <tr>
                                                             <td>
                                                                 <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/contactless.png"
+                                                                    src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/contactless.png"
                                                                     alt="">
                                                             </td>
                                                         </tr>
@@ -840,7 +524,7 @@
                                                         <tr>
                                                             <td>
                                                                 <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/temperature.png"
+                                                                    src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/temperature.png"
                                                                     alt="">
                                                             </td>
                                                         </tr>
@@ -858,7 +542,7 @@
                                                         <tr>
                                                             <td>
                                                                 <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/safe.png"
+                                                                    src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/safe.png"
                                                                     alt="">
                                                             </td>
                                                         </tr>
@@ -876,7 +560,7 @@
                                                         <tr>
                                                             <td>
                                                                 <img width="80"
-                                                                    src="https://thedermaco.com/emailer-images/20200921/Regular@2x.png"
+                                                                    src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Regular@2x.png"
                                                                     alt="">
                                                             </td>
                                                         </tr>
@@ -937,22 +621,22 @@
                                         <tr>
                                             <td class="social-icons">
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon awesome-facebook-f.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon awesome-facebook-f.png"
                                                         alt=""></a>
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon awesome-twitter.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon awesome-twitter.png"
                                                         alt=""></a>
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon ionic-ios-mail.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon ionic-ios-mail.png"
                                                         alt=""></a>
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon metro-instagram.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon metro-instagram.png"
                                                         alt=""></a>
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon metro-youtube.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon metro-youtube.png"
                                                         alt=""></a>
                                                 <a href=""><img class="fluid-image"
-                                                        src="https://thedermaco.com/emailer-images/20200921/Icon awesome-pinterest.png"
+                                                        src="https://raw.githubusercontent.com/abhishek-mittal/image-hosts/master/_tdc/transactional/assets/Icon awesome-pinterest.png"
                                                         alt=""></a>
                                             </td>
                                         </tr>
@@ -1012,15 +696,14 @@
 
                             <tr>
                                 <td class="derma-message">
-                                    <p>Life Is Short, Keep Your Skin & Hair Flawless!</p>
-                                    <h4>The Derma Co.</h4>
+                                    <p class="special-links" style="font-size: 12px;
+                                    font-weight: bold;">#HealDontConceal</p>
+                                    <h4>The Derma Co.</h4 !important>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-
-
 
             </table>
 
